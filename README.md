@@ -8,7 +8,7 @@ Creating particle physics:
 https://www.youtube.com/watch?v=vAJEHf92tV0&t=3170s
 
 ## How it works
-The animation consists of four primary components: a 'read' canvas, a 'write' canvas, the video element, and the face-tracking AI model. The video element serves as the data source. After setting up an animation loop, we use the video element as the image source and draw a video frame onto the read canvas. We then extract the image data from the read canvas and store it in a pixel array, where each element represents a red, green, blue, or alpha (rgba) value. The rgba values are consecutive, and every four elements represent a single pixel.
+The animation consists of four primary components: a 'read' canvas, a 'write' canvas, the video element, and the face-tracking AI model. After setting up an animation loop, we use the video element as the image source and draw a video frame onto the read canvas. We then extract the image data from the read canvas and store it in a pixel array, where each element represents a red, green, blue, or alpha (rgba) value. The rgba values are consecutive, and every four elements represent a single pixel.
 
 To optimise performance, we don't iterate over or store every pixel. Instead, we define a gap value that effectively skips a specified number of pixels during iteration and stores the rgba values in a particles array. The gap value also determines the size of the particles: the larger the gap, the larger the pixel size for each particle.
 
