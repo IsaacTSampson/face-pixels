@@ -19,7 +19,7 @@ const recognitionLeniency = 0;
 const frameRate = 120;
 
 const init = async () => {
-  await faceapi.nets.tinyFaceDetector.loadFromUri("/models");
+  await faceapi.nets.tinyFaceDetector.loadFromUri(`${import.meta.env.BASE_URL}models`);
 
   const writeCanvas = document.getElementById(
     writeCanvasId,
