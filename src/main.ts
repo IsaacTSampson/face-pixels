@@ -18,7 +18,7 @@ const visibilityEase = 0.1;
 const recognitionLeniency = 0;
 const frameRate = 120;
 
-const modelUri = import.meta.env.DEV ? 'models' : `${import.meta.env.BASE_URL}face-pixels/models`
+const modelUri = import.meta.env.DEV ? 'models' : `${import.meta.env.BASE_URL}/models`
 const init = async () => {
   await faceapi.nets.tinyFaceDetector.loadFromUri(modelUri);
 
