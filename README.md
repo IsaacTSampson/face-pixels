@@ -1,7 +1,7 @@
 # face-pixels
 
 ## Notes
-I have simplified the code, removing a few bells and whistles and the need for the Next.js framework to keep the code as simple as possible for the sake of this example.
+I have simplified the code, removing a few bells and whistles and the need for the Next.js framework to keep the code as simple as possible for the sake of this example. You can find the original implementation of this component at: https://sneaker-society-fe-108c13acc674.herokuapp.com/
 
 ## Learning sources
 Creating particle physics:
